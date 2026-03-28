@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +13,543 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header content-width">
+      <p class="header__caption">закрывающий тег</p>
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">на память о курсе</p>
+    </header>
+
+    <main class="content">
+      <section class="cards content-width" aria-labelledby="cards-title">
+        <h2 class="visually-hidden" id="cards-title">
+          Карточки с воспоминаниями о прохождении курса
+        </h2>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Фритрек и нулевой спринт: стартовый шум</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">старт</span>
+                <img
+                  class="card__image card__image_filter-sepia"
+                  src="./images/card-1.png"
+                  alt="Пиксельный светлый фургон на ночной дороге"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  В начале всё выглядело как шумный набор вкладок, непонятных слов и
+                  тревожной мысли «а вдруг это не моё». Но именно в этот момент мне
+                  понравилось, что я могу разбирать сложное на маленькие шаги.
+                </p>
+                <p class="card__text">
+                  Курсу хватило одного спринта, чтобы показать: страх не уходит сам,
+                  он уменьшается только от практики.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк первой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Первые дедлайны: место для сомнений</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">сомнение</span>
+                <img
+                  class="card__image card__image_filter-contrast"
+                  src="./images/card-2.png"
+                  alt="Тёмный пиксельный фургон на салатовом фоне"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Когда пошли первые настоящие дедлайны, я заметил, как легко снова
+                  начать сомневаться в себе. В такие моменты хотелось не писать код,
+                  а просто закрыть ноутбук.
+                </p>
+                <p class="card__text">
+                  Но именно тут появился важный навык: не драматизировать, а
+                  возвращаться к задаче кусками, пока она не перестаёт казаться
+                  монстром.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк второй карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Новый спринт: место для любопытства</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">интерес</span>
+                <img
+                  class="card__image card__image_filter-saturate"
+                  src="./images/card-3.png"
+                  alt="Светлый пиксельный фургон на розово-зелёном фоне"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Самые приятные дни были тогда, когда вместо «лишь бы сдать» включался
+                  чистый интерес. Хотелось не просто повторять за уроком, а понять,
+                  почему эта штука работает именно так.
+                </p>
+                <p class="card__text">
+                  В такие моменты курс переставал быть обязаловкой и становился личным
+                  маршрутом.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк третьей карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Сложные правки: место для упрямства</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">упорство</span>
+                <img
+                  class="card__image card__image_filter-neon"
+                  src="./images/card-4.png"
+                  alt="Яркий неоновый пиксельный фургон ночью"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Правки ревью иногда били больнее, чем хотелось бы признавать. Но
+                  именно они показали, что рост происходит не от похвалы, а от умения
+                  спокойно возвращаться и переделывать.
+                </p>
+                <p class="card__text">
+                  Если раньше замечание звучало как «ты плох», то сейчас это просто
+                  список задач на улучшение.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк четвёртой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Середина пути: место для передышки</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">баланс</span>
+                <img
+                  class="card__image card__image_filter-rotate"
+                  src="./images/card-5.png"
+                  alt="Фургон на фиолетовой дороге ночью"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  В какой-то момент стало ясно, что бесконечный рывок не работает. Если
+                  не оставлять себе передышку, обучение перестаёт приносить радость и
+                  начинает выжигать.
+                </p>
+                <p class="card__text">
+                  Самый полезный урок не про код: отдых — это не награда после работы,
+                  а часть нормального ритма.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк пятой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Ночные доработки: место для фокуса</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">фокус</span>
+                <img
+                  class="card__image card__image_filter-blur"
+                  src="./images/card-6.png"
+                  alt="Размытый фургон на тёмно-фиолетовом фоне"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Ночные доработки научили меня одному: иногда лучший прогресс
+                  случается, когда всё вокруг лишнее замолкает и остаётся только одна
+                  задача.
+                </p>
+                <p class="card__text">
+                  В такие часы я заметил, что сосредоточенность тоже тренируется.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк шестой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Живые проекты: место для уверенности</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">рост</span>
+                <img
+                  class="card__image card__image_filter-multi"
+                  src="./images/card-7.png"
+                  alt="Пиксельный фургон у костра под луной"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Настоящая уверенность пришла не в момент, когда я всё понял, а в тот
+                  момент, когда начал доводить проекты до рабочего состояния снова и
+                  снова.
+                </p>
+                <p class="card__text">
+                  Это очень приземлённое ощущение: ты просто знаешь, что сможешь
+                  доделать.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк седьмой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+
+          <li class="cards__item">
+            <article class="card">
+              <h2 class="card__title">Финальный рывок: место для благодарности</h2>
+              <div class="card__image-wrapper">
+                <span class="card__label" aria-hidden="true">финал</span>
+                <img
+                  class="card__image card__image_filter-grayscale"
+                  src="./images/card-8.png"
+                  alt="Пиксельный фургон у костра и скамейки ночью"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <p class="card__text">
+                  Последние проектные всегда немного странные: ты ещё внутри процесса,
+                  но уже видишь, сколько пройдено. И там, где раньше была усталость,
+                  неожиданно появляется благодарность к себе за дисциплину.
+                </p>
+                <p class="card__text">
+                  Хочется сохранить это чувство и не забывать, что большие вещи тоже
+                  собираются из маленьких шагов.
+                </p>
+              </div>
+              <div class="card__actions">
+                <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Поставить лайк восьмой карточке"
+                >
+                  <svg class="like-icon" viewBox="0 0 39 36" aria-hidden="true">
+                    <g class="sparks">
+                      <circle cx="19.5" cy="2.5" r="1.5" />
+                      <circle cx="7" cy="7" r="1.5" />
+                      <circle cx="32" cy="7" r="1.5" />
+                      <circle cx="4.5" cy="19" r="1.5" />
+                      <circle cx="34.5" cy="19" r="1.5" />
+                      <circle cx="10" cy="31" r="1.5" />
+                      <circle cx="29" cy="31" r="1.5" />
+                    </g>
+                    <g class="heart">
+                      <path
+                        class="core"
+                        d="M19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                      <path
+                        class="main-body"
+                        d="M19.5 29.2C9.5 23.2 5.5 17.9 5.5 12.4C5.5 8.7 8.2 6 11.8 6C14.5 6 16.7 7.4 19.5 10.6C22.3 7.4 24.5 6 27.2 6C30.8 6 33.5 8.7 33.5 12.4C33.5 17.9 29.5 23.2 19.5 29.2Z"
+                      />
+                      <path
+                        class="contour"
+                        d="M27.3 2C24.3 2 21.8 3.3 19.5 5.8C17.2 3.3 14.7 2 11.7 2C6.1 2 2 6.1 2 11.8C2 18.9 7.1 25.3 18.5 32.2L19.5 32.8L20.5 32.2C31.9 25.3 37 18.9 37 11.8C37 6.1 32.9 2 27.3 2ZM19.5 30.5C8.8 24.1 4 18.4 4 12.1C4 7.7 7.4 4.5 11.7 4.5C14.9 4.5 17.2 6.2 19.5 8.8C21.8 6.2 24.1 4.5 27.3 4.5C31.6 4.5 35 7.7 35 12.1C35 18.4 30.2 24.1 19.5 30.5Z"
+                      />
+                    </g>
+                  </svg>
+                </button>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <button class="button save-button" type="button" aria-controls="save-dialog">
+        <svg class="button__icon save-button__icon" aria-hidden="true">
+          <use href="./svg/sprite.svg#floppy-icon"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </main>
+
+    <dialog class="dialog" id="save-dialog">
+      <form class="dialog__form" method="dialog">
+        <div class="dialog__content">
+          <svg class="dialog__icon" aria-hidden="true">
+            <use href="./svg/sprite.svg#floppy-icon"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button class="button dialog__button" type="submit">
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
+    </dialog>
+
+    <footer class="footer content-width">
+      <h2 class="footer__title">&lt;/HTML&gt;</h2>
+    </footer>
+
     <script src="./scripts/like.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>

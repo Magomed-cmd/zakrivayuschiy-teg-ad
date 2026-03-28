@@ -1,1 +1,40 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --font-main: 'Inter-Variable';
+  --font-accent: 'PressStart2P';
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --page-background-color: #fff;
+  --page-background-image:
+    repeating-linear-gradient(
+      to right,
+      rgb(211 211 211 / 1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgb(211 211 211 / 1) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #e7e7e7 30%,
+      #1a1a1a 100%
+    );
+  --section-inline-size: clamp(23.4375rem, 14.2862rem + 39.045vw, 43.75rem);
+  --section-padding-inline: clamp(0rem, -0.5597rem + 2.3891vw, 1.25rem);
+  --section-border: 2px solid #000;
+  --section-background: #fff;
+  --main-text-color: #000;
+  --background-accent-color: #000;
+  --button-text-color: #fff;
+  --label-stroke-color: #fff;
+  --dialog-backdrop-color: rgb(0 0 0 / 0.75);
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --button-shadow: 2px 2px 0 #000;
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease-in-out;
+}
